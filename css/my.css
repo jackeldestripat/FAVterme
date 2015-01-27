@@ -1,4 +1,21 @@
 ul{
-  margin-left: 0  ;
-  list-style:none  ;
+  margin-left: -2em;
+  margin-right: 0.5em;
+  list-style:none;
+}
+li .eventLi{
+   // background-image: url();
+   background: #3be6c4;
+}
+h4{
+    font-size: 1em;
+}
+li div p{
+    font-size: 0.8em;
+}
+h2{
+    font-size: 1.5em;
+}
+.navbar-brand{
+    font-size: 0.9em;
 }

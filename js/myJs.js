@@ -1,4 +1,3 @@
-            function openmodal(){
-                $('#portfolioModal5').modal('show');
-                console.log('open modal');
+            function openmodalE(id){
+                $('#E'+id).modal('show');
             } 
