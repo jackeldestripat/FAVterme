@@ -84,7 +84,7 @@ SocialSharing.install = function () {
     window.plugins = {};
   }
 
-  window.plugins.socialsharing = new SocialSharing();
+ module.exports= new SocialSharing();
   return window.plugins.socialsharing;
 };
 

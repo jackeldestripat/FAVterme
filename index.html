@@ -74,15 +74,12 @@
                             <span class="name">Festa Major  del Terme</span>
                             <hr class="star-light">
                             <span class="skills">Vine a la festa</span>
-                            <button onclick="window.plugins.socialsharing.canShareVia('com.apple.social.facebook', 'msg', null, null, null, function (e) {
-                                       alert(e)
-                                   }, function (e) {
-                                       alert(e)
-                                   })">is facebook available on iOS?</button>
-                            <a href="#" onclick="openUrl('http://www.google.com/');
-                                    return false;">Link test 1</a>
-                            <a href="#" onclick="window.open('http://www.google.com/', '_system', 'location=yes');
-          return false;">Test link 2</a>
+                            
+                            
+                              <button onclick="window.plugins.socialsharing.share('My message')">share!</button>
+            <button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
+            <button onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')">message via Twitter</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -449,7 +446,7 @@
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
-
+        <script type="text/javascript" src="js/SocialSharing.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="js/bootstrap.min.js"></script>
 
@@ -465,11 +462,12 @@
         <!-- Custom Theme JavaScript -->
         <script src="js/freelancer.js"></script>
         <script src="js/jquery.expandable.list.js"></script>
+
         <script type="text/javascript">
                                             $('.list').expList();
         </script>
         <script src="js/myJs.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/SocialSharing.js"></script>
+
     </body>
 
 </html>
