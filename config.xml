@@ -40,7 +40,7 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="SplashScreenDelay" value="0" />
     
-    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.0" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing"/>
     
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
