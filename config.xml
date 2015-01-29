@@ -7,7 +7,21 @@
     <author email="info@igorisoftware.com" href="http://igorisoftware.com/">
         IgoriSoftware
     </author>
+    
+    <feature name="SocialSharing">
+        <param name="ios-package" value="SocialSharing" />
+    </feature>
+    <!-- for Android -->
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <!-- for Windows Phone -->
+    <feature name="SocialSharing">
+        <param name="wp-package" value="SocialSharing"/>
+    </feature>
+
     <content src="index.html" />
+    
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="default" />
@@ -25,6 +39,9 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
     <preference name="SplashScreenDelay" value="0" />
+    
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.0" />
+    
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:platform="android" gap:qualifier="mdpi" src="res/icon/android/icon-48-mdpi.png" />
@@ -37,16 +54,6 @@
     <icon gap:platform="winphone" src="res/icon/windows-phone/icon-48.png" />
     <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173-tile.png" />
     <!-- for iOS -->
-<feature name="SocialSharing">
-  <param name="ios-package" value="SocialSharing" />
-</feature>
-<!-- for Android -->
-<feature name="SocialSharing">
-  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-</feature>
-<!-- for Windows Phone -->
-<feature name="SocialSharing">
-  <param name="wp-package" value="SocialSharing"/>
-</feature>
-<gap:plugin name="nl.x-services.plugins.socialsharing" />
+
+
 </widget>
