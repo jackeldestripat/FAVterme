@@ -74,19 +74,15 @@
                             <span class="name">Festa Major  del Terme</span>
                             <hr class="star-light">
                             <span class="skills">Vine a la festa</span>
-                             <button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
-<button onclick="window.plugins.socialsharing.share('Message and subject', 'The subject')">message and subject</button>
-<button onclick="window.plugins.socialsharing.share(null, null, null, 'http://www.x-services.nl')">link only</button>
-<button onclick="window.plugins.socialsharing.share('Message and link', null, null, 'http://www.x-services.nl')">message and link</button>
-<button onclick="window.plugins.socialsharing.share(null, null, 'https://www.google.nl/images/srpr/logo4w.png', null)">image only</button>
-// Beware: passing a base64 file as 'data:' is not supported on Android 2.x: https://code.google.com/p/android/issues/detail?id=7901#c43
-// Hint: when sharing a base64 encoded file on Android you can set the filename by passing it as the subject (second param)
-<button onclick="window.plugins.socialsharing.share(null, 'Android filename', 'data:image/png;base64,R0lGODlhDAAMALMBAP8AAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUKAAEALAAAAAAMAAwAQAQZMMhJK7iY4p3nlZ8XgmNlnibXdVqolmhcRQA7', null)">base64 image only</button>
-// Hint: you can share multiple files by using an array as thirds param: ['file 1','file 2', ..]
-<button onclick="window.plugins.socialsharing.share('Message and image', null, 'https://www.google.nl/images/srpr/logo4w.png', null)">message and image</button>
-<button onclick="window.plugins.socialsharing.share('Message, image and link', null, 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">message, image and link</button>
-<button onclick="window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">message, subject, image and link</button>
-
+                            <button onclick="window.plugins.socialsharing.canShareVia('com.apple.social.facebook', 'msg', null, null, null, function (e) {
+                                       alert(e)
+                                   }, function (e) {
+                                       alert(e)
+                                   })">is facebook available on iOS?</button>
+                            <a href="#" onclick="openUrl('http://www.google.com/');
+                                    return false;">Link test 1</a>
+                            <a href="#" onclick="window.open('http://www.google.com/', '_system', 'location=yes');
+          return false;">Test link 2</a>
                         </div>
                     </div>
                 </div>
@@ -97,61 +93,61 @@
 
             <ul id="list1" class="list">
 
-                                    <li> 
-                        <div class="list-group-item ">
-                            <span class="badge">2</span>
-                            <h2 class="list-group-item-heading">Divendres 15 d'Agost</h2>				
-                        </div>  
+                <li> 
+                    <div class="list-group-item ">
+                        <span class="badge">2</span>
+                        <h2 class="list-group-item-heading">Divendres 15 d'Agost</h2>				
+                    </div>  
 
-                        <ul>                            <li> 
-                                <div onclick="openmodalE('1')" class="list-group-item eventLi">
-                                    <span class="badge">21:30</span>
-                                    <h4 class="list-group-item-heading">Sardinada</h4>
-                                    <p>Sardinada popular</p>
+                    <ul>                            <li> 
+                            <div onclick="openmodalE('1')" class="list-group-item eventLi">
+                                <span class="badge">21:30</span>
+                                <h4 class="list-group-item-heading">Sardinada</h4>
+                                <p>Sardinada popular</p>
 
-                                </div>   
-                            </li>
+                            </div>   
+                        </li>
 
-                                                        <li> 
-                                <div onclick="openmodalE('2')" class="list-group-item eventLi">
-                                    <span class="badge">22:30</span>
-                                    <h4 class="list-group-item-heading">Teatre</h4>
-                                    <p>Teatre a la fresca</p>
+                        <li> 
+                            <div onclick="openmodalE('2')" class="list-group-item eventLi">
+                                <span class="badge">22:30</span>
+                                <h4 class="list-group-item-heading">Teatre</h4>
+                                <p>Teatre a la fresca</p>
 
-                                </div>   
-                            </li>
+                            </div>   
+                        </li>
 
-                            </ul></li>                    <li> 
-                        <div class="list-group-item ">
-                            <span class="badge">3</span>
-                            <h2 class="list-group-item-heading">Disabte 16 d'Agost</h2>				
-                        </div>  
+                    </ul></li>                    <li> 
+                    <div class="list-group-item ">
+                        <span class="badge">3</span>
+                        <h2 class="list-group-item-heading">Disabte 16 d'Agost</h2>				
+                    </div>  
 
-                        <ul>                            <li> 
-                                <div onclick="openmodalE('3')" class="list-group-item eventLi">
-                                    <span class="badge">17:00</span>
-                                    <h4 class="list-group-item-heading">Jocs</h4>
-                                    <p>Jocs per a totes les edats</p>
+                    <ul>                            <li> 
+                            <div onclick="openmodalE('3')" class="list-group-item eventLi">
+                                <span class="badge">17:00</span>
+                                <h4 class="list-group-item-heading">Jocs</h4>
+                                <p>Jocs per a totes les edats</p>
 
-                                </div>   
-                            </li>
+                            </div>   
+                        </li>
 
-                                                        <li> 
-                                <div onclick="openmodalE('4')" class="list-group-item eventLi">
-                                    <span class="badge">22:00</span>
-                                    <h4 class="list-group-item-heading">Ball</h4>
-                                    <p>Ball</p>
+                        <li> 
+                            <div onclick="openmodalE('4')" class="list-group-item eventLi">
+                                <span class="badge">22:00</span>
+                                <h4 class="list-group-item-heading">Ball</h4>
+                                <p>Ball</p>
 
-                                </div>   
-                            </li>
+                            </div>   
+                        </li>
 
-                            </ul></li>                    <li> 
-                        <div class="list-group-item ">
-                            <span class="badge">3</span>
-                            <h2 class="list-group-item-heading">Diumenge 17 d'Agost</h2>				
-                        </div>  
+                    </ul></li>                    <li> 
+                    <div class="list-group-item ">
+                        <span class="badge">3</span>
+                        <h2 class="list-group-item-heading">Diumenge 17 d'Agost</h2>				
+                    </div>  
 
-                        </li>            </ul>
+                </li>            </ul>
         </section>
 
 
@@ -166,52 +162,52 @@
                     </div>
                 </div>
                 <div class="row">
-                                            <div class="col-sm-4 portfolio-item">
-                            <a href="#E1" class="portfolio-link" data-toggle="modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <i class="fa fa-search-plus fa-3x"></i>
-                                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#E1" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
-                                <img src="img/events/1.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                                                <div class="col-sm-4 portfolio-item">
-                            <a href="#E2" class="portfolio-link" data-toggle="modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <i class="fa fa-search-plus fa-3x"></i>
-                                    </div>
+                            </div>
+                            <img src="img/events/1.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#E2" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
-                                <img src="img/events/2.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                                                <div class="col-sm-4 portfolio-item">
-                            <a href="#E3" class="portfolio-link" data-toggle="modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <i class="fa fa-search-plus fa-3x"></i>
-                                    </div>
+                            </div>
+                            <img src="img/events/2.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#E3" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
-                                <img src="img/events/3.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                                                <div class="col-sm-4 portfolio-item">
-                            <a href="#E4" class="portfolio-link" data-toggle="modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <i class="fa fa-search-plus fa-3x"></i>
-                                    </div>
+                            </div>
+                            <img src="img/events/3.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#E4" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
-                                <img src="img/events/4.jpg" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                                        </div>
+                            </div>
+                            <img src="img/events/4.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        
-                <!-- Portfolio Grid Section -->
+
+
+        <!-- Portfolio Grid Section -->
         <section id="patrocinadors">
             <div class="container">
                 <div class="row">
@@ -221,17 +217,17 @@
                     </div>
                 </div>
                 <div class="row">
-                                            <div class="col-sm-4 portfolio-item">
-                            <a href="#P" class="portfolio-link" data-toggle="modal">
-                                <div class="caption">
-                                    <div class="caption-content">
-                                        <i class="fa fa-search-plus fa-3x"></i>
-                                    </div>
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#P" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
-                                <img src="img/patrocinadors/1.png" class="img-responsive" alt="">
-                            </a>
-                        </div>
-                                        </div>
+                            </div>
+                            <img src="img/patrocinadors/1.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -276,8 +272,8 @@
             </a>
         </div>
 
-        
-<div class="portfolio-modal modal fade" id="E1" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="portfolio-modal modal fade" id="E1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -293,7 +289,7 @@
                                 <hr class="star-primary">
                                 <img src="img/events/1.jpg" class="img-responsive img-centered" alt="">
                                 <p>Sardina popular per a tothom.</p>
-                                 <ul class="list-inline item-details">
+                                <ul class="list-inline item-details">
                                     <li>Hora:
                                         <strong>21:30                                        </strong>
                                     </li>
@@ -309,8 +305,8 @@
                 </div>
             </div>
         </div>
-        
-<div class="portfolio-modal modal fade" id="E2" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="portfolio-modal modal fade" id="E2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -326,7 +322,7 @@
                                 <hr class="star-primary">
                                 <img src="img/events/2.jpg" class="img-responsive img-centered" alt="">
                                 <p>Teatre amb la companyia Random</p>
-                                 <ul class="list-inline item-details">
+                                <ul class="list-inline item-details">
                                     <li>Hora:
                                         <strong>22:30                                        </strong>
                                     </li>
@@ -342,8 +338,8 @@
                 </div>
             </div>
         </div>
-        
-<div class="portfolio-modal modal fade" id="E3" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="portfolio-modal modal fade" id="E3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -359,7 +355,7 @@
                                 <hr class="star-primary">
                                 <img src="img/events/3.jpg" class="img-responsive img-centered" alt="">
                                 <p>Jocs per a tota la canalla i per els grans tamb�</p>
-                                 <ul class="list-inline item-details">
+                                <ul class="list-inline item-details">
                                     <li>Hora:
                                         <strong>17:00                                        </strong>
                                     </li>
@@ -375,8 +371,8 @@
                 </div>
             </div>
         </div>
-        
-<div class="portfolio-modal modal fade" id="E4" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="portfolio-modal modal fade" id="E4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -392,7 +388,7 @@
                                 <hr class="star-primary">
                                 <img src="img/events/4.jpg" class="img-responsive img-centered" alt="">
                                 <p>Ball amb l'orquestra Random</p>
-                                 <ul class="list-inline item-details">
+                                <ul class="list-inline item-details">
                                     <li>Hora:
                                         <strong>22:00                                        </strong>
                                     </li>
@@ -408,10 +404,10 @@
                 </div>
             </div>
         </div>
-         
-        
-              
-<div class="portfolio-modal modal fade" id="P" tabindex="-1" role="dialog" aria-hidden="true">
+
+
+
+        <div class="portfolio-modal modal fade" id="P" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
@@ -427,18 +423,18 @@
                                 <hr class="star-primary">
                                 <img src="img/patrocinadors/1.png" class="img-responsive img-centered" alt="">
                                 <p>A IgoriSoftware oferim solucions per al teu negoci.<br>Creiem en els teus projectes com si fossin nostres i els impulsem al teu costat.</p>
-                               
-                                 <ul class="list-inline item-details">
-                                                                         <li>Tel:
-                                        <strong onclick="document.location='tel:662021065'">662021065                                        </strong>
+
+                                <ul class="list-inline item-details">
+                                    <li>Tel:
+                                        <strong onclick="document.location = 'tel:662021065'">662021065                                        </strong>
                                     </li>
                                     <li>WEB:
                                         <strong onclick="window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');">www.igorisoftware.com</strong>
                                     </li>
-                                                                                                             <li>Mail:
-                                        <strong onclick="document.location='mailto: info@igorisoftware.com'"> info@igorisoftware.com                                        </strong>
+                                    <li>Mail:
+                                        <strong onclick="document.location = 'mailto: info@igorisoftware.com'"> info@igorisoftware.com                                        </strong>
                                     </li>
-                                                                    </ul>
+                                </ul>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Tancar</button>
                             </div>
                         </div>
@@ -446,7 +442,7 @@
                 </div>
             </div>
         </div>
-        
+
 
 
 
@@ -470,7 +466,7 @@
         <script src="js/freelancer.js"></script>
         <script src="js/jquery.expandable.list.js"></script>
         <script type="text/javascript">
-                                $('.list').expList();
+                                            $('.list').expList();
         </script>
         <script src="js/myJs.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/SocialSharing.js"></script>

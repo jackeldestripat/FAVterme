@@ -41,6 +41,7 @@
     <preference name="SplashScreenDelay" value="0" />
     
     <gap:plugin name="nl.x-services.plugins.socialsharing"/>
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
     
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
