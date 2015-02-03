@@ -7,18 +7,6 @@
     <author email="info@igorisoftware.com" href="http://igorisoftware.com/">
         IgoriSoftware
     </author>
-    
-    <feature name="SocialSharing">
-        <param name="ios-package" value="SocialSharing" />
-    </feature>
-    <!-- for Android -->
-    <feature name="SocialSharing">
-        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-    </feature>
-    <!-- for Windows Phone -->
-    <feature name="SocialSharing">
-        <param name="wp-package" value="SocialSharing"/>
-    </feature>
 
     <content src="index.html" />
     
@@ -40,7 +28,13 @@
     <preference name="android-installLocation" value="auto" />
     <preference name="SplashScreenDelay" value="0" />
     
-    <gap:plugin name="nl.x-services.plugins.socialsharing"/>
+   <feature name="Share" >
+        <param name="android-package" value="nl.madebymark.share.Share"/>
+    </feature>          
+    <feature name="Share">
+        <param name="ios-package" value="MMShare" /> 
+    </feature>    
+    <gap:plugin name="nl.madebymark.share" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     
     <icon src="icon.png" />
