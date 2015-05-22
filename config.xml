@@ -35,7 +35,7 @@
         <param name="ios-package" value="MMShare" /> 
     </feature>    
     <gap:plugin name="nl.madebymark.share" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" />
+<!--    <gap:plugin name="org.apache.cordova.inappbrowser" />-->
     
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
