@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="fmelterme.igorisoftware.com" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<!--Android-->
+<!--<widget id="fmelterme.igorisoftware.com" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">-->
+<!--IOS-->
+<widget id="com.igorisoftware.elterme" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Festa Major del Terme</name>
     <description>
         Aplicació oficial de la Festa Major del Terme.
